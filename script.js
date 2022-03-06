@@ -17,7 +17,7 @@ let computerSelection = computerPlay(choice);
 let playerScore =0;
 let computerScore =0;
 
-function playRound (playerSelection,computerSelection,playerScore,computerScore)  {
+function playRound (playerSelection,computerSelection)  {
 
     
     playerSelection === computerSelection ?  console.log('Draw'):
