@@ -13,13 +13,14 @@ let playerSelection = prompt('What is your Weapon \'Rock\',\'Paper\',\'Scissors\
 let computerSelection = computerPlay(choice);
 function playRound (playerSelection,computerSelection)  {
     playerSelection === computerSelection ?  console.log('Draw'):
-    playerSelection === 'Scissors' && computerSelection[choice] === 'Paper'? console.log('You win'):
-    playerSelection === 'Paper' && computerSelection[choice] === 'Rock'? console.log('You win'):
-    playerSelection === 'Rock' && computerSelection[choice] === 'Scissors'? console.log('You win'):
+    playerSelection === 'Scissors' && computerSelection === 'Paper'? console.log('You win, The Scissor beats Paper'):
+    playerSelection === 'Paper' && computerSelection === 'Rock'? console.log('You win, The Paper beats Rock'):
+    playerSelection === 'Rock' && computerSelection === 'Scissors'? console.log('You win, The Rock beats Paper'):
 
-    playerSelection === 'Paper' && computerSelection[choice] === 'Scissor'? console.log('The Computer Won'):
-    playerSelection === 'Rock' && computerSelection[choice] === 'Paper'? console.log('The Computer Won'):
-    playerSelection === 'Scissors' && computerSelection[choice] === 'Rock'? console.log('The Computer Won'):
+
+    playerSelection === 'Paper' && computerSelection === 'Scissors'? console.log('The Computer Win, The scissor beats Paper'):
+    playerSelection === 'Rock' && computerSelection === 'Paper'? console.log('The Computer Win, The Paper beats Rock'):
+    playerSelection === 'Scissors' && computerSelection === 'Rock'? console.log('The Computer Won, The Rock beats Paper'):
     
 
     console.log('Failed');
@@ -29,8 +30,8 @@ function playRound (playerSelection,computerSelection)  {
 
 
 
-console.log(`The player chose ${playerSelection}`);
-console.log(`The computer chose ${computerPlay(choice)}`);
+console.log(`You chose ${playerSelection}`);
+console.log(`The computer chose ${computerSelection}`);
 
 console.log(playRound(playerSelection, computerSelection));
 
