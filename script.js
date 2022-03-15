@@ -11,7 +11,7 @@ function game(){
 } 
 
 computerPlay(choice);
-let playerSelection = prompt('What is your Weapon \'Rock\',\'Paper\',\'Scissors\'?');
+//let playerSelection = prompt('What is your Weapon \'Rock\',\'Paper\',\'Scissors\'?');
 let computerSelection = computerPlay(choice);
 
 let playerScore =0;
