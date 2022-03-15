@@ -1,6 +1,6 @@
 
 function game(){
-    for(let i = 0; i < 5; i++){
+  
    const choice = ['Rock','Paper','Scissors'];
    
   
@@ -8,7 +8,6 @@ function game(){
     const randomChoice = Math.floor(Math.random() * choice.length);
     return choice[randomChoice];
 
-} 
 
 computerPlay(choice);
 let playerSelection = prompt('What is your Weapon \'Rock\',\'Paper\',\'Scissors\'?');
@@ -34,16 +33,9 @@ function playRound (playerSelection,computerSelection)  {
 
 
 }
-
-
-
 console.log(`You chose ${playerSelection},The computer chose ${computerSelection}`);
 
-
-
 playRound(playerSelection, computerSelection);
-
-
 
     
     }
