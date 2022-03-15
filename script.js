@@ -1,6 +1,6 @@
 
 function game(){
-    for(let i = 0; i < 5; i++){
+    
    const choice = ['Rock','Paper','Scissors'];
    
   
@@ -46,7 +46,7 @@ playRound(playerSelection, computerSelection);
 
 
     
-    }
+    
 }
 
 game();
