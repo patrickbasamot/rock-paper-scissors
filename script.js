@@ -75,10 +75,16 @@ const  click = () => {
             const choiceNumber = Math.floor(Math.random()* computerChoice.length);
             const computerOption = computerChoice[choiceNumber];
 
-                if( option === computerChoice){
+                if( option === rockBtn && computerChoice == 'rock'){
                     result.textContent = 'Draw';
                 } 
-                else if (option == scissorBtn &&  computerOption === 'paper'  ){
+                else if( option === paperBtn && computerChoice == 'paper'){
+                    result.textContent = 'Draw';
+                } 
+                else if( option === scissorBtn && computerChoice == 'scissor'){
+                    result.textContent = 'Draw';
+                } 
+                else if (option === scissorBtn &&  computerOption === 'paper'){
                     result.textContent = " You win";
                     playerScore++;
                     playerScoreBoard.textContent = playerScore;
