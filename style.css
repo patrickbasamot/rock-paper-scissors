@@ -5,8 +5,15 @@
 .game{
     display: flex;
     flex-direction: column;
-    height: 100vh;
-    width: 100vw;
+    margin: 7% auto;
+    overflow: hidden;
+    border-radius: 1.5rem;
+    width: 28.125rem;
+    max-width: 100%;
+    background-color: white;
+    height: auto;
+    background-color: black; 
+    color: wheat;
     justify-content: center;
     align-items: center;
 
@@ -14,9 +21,11 @@
 .score{
     display: flex;
     gap: 20px;
-    justify-content: space-evenly;
-
 }
 .p-count,.c-count{
    text-align: center;
 }
+
+
+/* CSS */
+
