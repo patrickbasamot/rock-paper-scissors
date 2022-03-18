@@ -75,15 +75,10 @@ const  click = () => {
 
             const choiceNumber = Math.floor(Math.random()* computerChoice.length);
             const computerOption = computerChoice[choiceNumber];
-
-                if( option === rockBtn && computerChoice === 'rock'){
+                
+                if( option.className === computerOption ){
                     result.textContent = 'Draw';
-                } 
-                else if( option === paperBtn && computerChoice === 'paper'){
-                    result.textContent = 'Draw';
-                } 
-                else if( option === scissorBtn && computerChoice ==='scissor'){
-                    result.textContent = 'Draw';
+                    console.log('Draw');
                 } 
                 else if (option === scissorBtn &&  computerOption === 'paper'){
                     result.textContent = " You win";
