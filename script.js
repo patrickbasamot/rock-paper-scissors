@@ -66,6 +66,7 @@ const  click = () => {
     let computerScore = 0;
 
     const playerChoice = [rockBtn,paperBtn,scissorBtn];
+    
     const computerChoice = ['rock','paper','scissor'];
     const result = document.querySelector('.result');
     playerChoice.forEach(option => {
@@ -75,13 +76,13 @@ const  click = () => {
             const choiceNumber = Math.floor(Math.random()* computerChoice.length);
             const computerOption = computerChoice[choiceNumber];
 
-                if( option === rockBtn && computerChoice == 'rock'){
+                if( option === rockBtn && computerChoice === 'rock'){
                     result.textContent = 'Draw';
                 } 
-                else if( option === paperBtn && computerChoice == 'paper'){
+                else if( option === paperBtn && computerChoice === 'paper'){
                     result.textContent = 'Draw';
                 } 
-                else if( option === scissorBtn && computerChoice == 'scissor'){
+                else if( option === scissorBtn && computerChoice ==='scissor'){
                     result.textContent = 'Draw';
                 } 
                 else if (option === scissorBtn &&  computerOption === 'paper'){
@@ -94,7 +95,7 @@ const  click = () => {
                     playerScore++;
                     playerScoreBoard.textContent = playerScore;
                 }
-                else if(option === rockBtn && computerOption === 'rock'){
+                else if(option === rockBtn && computerOption === 'scissor'){
                     result.textContent = " You win";
                     playerScore++;
                     playerScoreBoard.textContent = playerScore;
