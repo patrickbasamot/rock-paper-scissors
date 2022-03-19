@@ -26,6 +26,14 @@
    text-align: center;
 }
 
-
+button{
+    text-align: center;
+    padding: 10px;
+    align-items: center;
+    
+}
+.move{
+    text-align: center;
+}
 /* CSS */
 
